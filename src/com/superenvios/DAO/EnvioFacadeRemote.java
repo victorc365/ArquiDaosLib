@@ -30,5 +30,6 @@ public interface EnvioFacadeRemote {
     int count();
 
     public Long createEnvio(Envio envio);
+
     
 }
