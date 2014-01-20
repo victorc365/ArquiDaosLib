@@ -28,5 +28,7 @@ public interface EnvioFacadeRemote {
     List<Envio> findRange(int[] range);
 
     int count();
+
+    public Long createEnvio(Envio envio);
     
 }
