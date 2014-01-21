@@ -24,7 +24,7 @@ import javax.persistence.NamedQuery;
 @Entity
 @Inheritance(strategy = InheritanceType.JOINED)
 @NamedQueries({@NamedQuery(name = "findAll",query = "SELECT p FROM Persona p"),
-    @NamedQuery(name = "findAllWithPermisos",query = "SELECT p FROM Persona p JOIN FETCH p.rol")
+    @NamedQuery(name = "findAllWithPermisos",query = "SELECT p FROM Persona p LEFT JOIN FETCH p.rol")
 })
 public class Persona implements Serializable {
     private static final long serialVersionUID = 1L;

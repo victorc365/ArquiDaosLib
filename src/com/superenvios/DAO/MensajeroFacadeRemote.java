@@ -28,5 +28,7 @@ public interface MensajeroFacadeRemote {
     List<Mensajero> findRange(int[] range);
 
     int count();
+
+    public List<Mensajero> findActivos();
     
 }
