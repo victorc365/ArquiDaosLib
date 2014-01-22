@@ -30,5 +30,7 @@ public interface MensajeroFacadeRemote {
     int count();
 
     public List<Mensajero> findActivos();
+
+    public Mensajero findMensajeroEnvio(Long id);
     
 }
